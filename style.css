@@ -1,1 +1,36 @@
-/* Write your CSS Here. */
+body{
+    /* display: flex; */
+    /* text-align: center; */
+}
+.row{
+    display: flex;
+    /* flex-basis: 500px; */
+}
+.cell{
+    flex-basis: 20px;
+    height: 20px;
+}
+.wall{
+    background-color: darkblue;
+}
+.hidden_wall,
+.open{
+    background-color: lightblue;
+}
+.start{
+    background-color: lightgreen;
+}
+.end{
+    background-color: violet;
+}
+.player{
+    background-color: green;
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+      background-color: white;
+    }
+  }
+
